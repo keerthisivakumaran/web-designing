@@ -1,0 +1,51 @@
+<html>
+<style>
+
+body
+{
+display:grid;
+grid-template-areas:
+"nav header header"
+"nav article ads"
+"nav footer ads ";
+grid-template-rows:100px 1fr 100px;
+grid-template-columns:10% 1fr 25%;
+grid-gap:1px;
+height:100vh;
+margin:0;
+}
+
+header,article,nav,div
+{
+padding:20px;
+background-color:steelblue;
+}
+#pageHeader 
+{
+grid-area:header;
+}
+#pageFooter
+{
+grid-area:footer;
+}
+#mainArticle
+{
+grid-area:article;
+}
+#mainNav
+{
+grid-area:nav;
+}
+#siteAds
+{
+grid-area:ads;
+}
+</style>
+<body>
+<header id="pageHeader"><h1><center>The oxford university</center></h1></header>
+<article id="mainArticle"><img src="https://www.sei.org/wp-content/uploads/2017/12/sei-oxford-getty-184296191-1488x527.jpg " width="829" height="400">Oxford</article>
+<nav id="mainNav"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXMYfnuB9SLMBF9gDNBEFqjL2aZUQrjj-DcNHKhxeyvY0PGy8y1jbcrzYD3y0OP4UDaVo&usqp=CAUNAVIGATION" width="110" height="600"></nav>
+<div id="siteAds"><h1><font color="lime" font face="comic sans ms">About the college</font><font color="white"font face="cursive" ><marquee direction="up" height="500px">The University of Oxford is a collegiate research university in Oxford, England. There is evidence of teaching as early as 1096, making it the oldest university in the English-speaking world and the world's second-oldest university in continuous operation.</marquee></h1></div>
+<header id="pagefooter"><h2> FOR FURTHURE DETAILS CONTACT ADMISSTION OFFICE</H2></h1></footer>
+</body>
+</html>
